@@ -1,0 +1,18 @@
+<p>ngclassexample works!</p>
+<!-- <div [ngclass]="{'tdata':  }"></div> -->
+<!-- {{ isLightMode ? 'Switch to Dark Mode' : 'Switch to Light Mode' }} -->
+
+<div [ngClass]="{ firstclass: !tdata, secondclass: tdata}">  <!--classname.value to be evaluted-->
+
+    <b *ngFor="let o of getObj()">
+        {{o.country}}
+        {{o.currency}}
+        {{o.states}}
+    </b>
+
+</div>
+<!-- <div [ngClass]=" {secondclass: !tdata}">
+
+   <p>Hi</p>
+
+</div> -->
